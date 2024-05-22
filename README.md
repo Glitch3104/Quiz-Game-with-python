@@ -1,1 +1,1 @@
-# Quiz-Game-with-python
+# Quiz-Game-with-Javascript
