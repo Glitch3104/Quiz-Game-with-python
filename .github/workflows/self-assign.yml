@@ -1,0 +1,15 @@
+name: Self-Assign Issues
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  self-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign Issue to Comment Author
+        uses: kentaro-m/auto-assign-action@v2
+        with:
+          github_token: ${{ secrets.MY_PERSONAL_TOKEN }}
+          assign_comment: '/assign me'
